@@ -1,1 +1,21 @@
-theme: jekyll-theme-midnight
+name: Projekt ScriBt
+description: Building ROMs made understandable
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+defaults:
+  -
+    scope:
+      path: "wiki_pages"
+    values:
+      type: wiki
+      layout: wiki
+  -
+    scope:
+      path: "_posts"
+    values:
+      type: post
+      layout: post
+gems:
+  - jekyll-relative-links
